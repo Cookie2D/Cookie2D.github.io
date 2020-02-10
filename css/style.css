@@ -339,76 +339,41 @@ body{
 .button_burger{
   display: none;
 }
+/* Sweet Alert */
 
-.button-modal{
-  margin: 0 auto;
+.swal-overlay {
+  background-color: rgba(20, 18, 24, 0.8)
+}
 
+.swal-modal {
+  background-color: #141218;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.swal-title {
+  margin: 0px;
+  font-size: 56px;
+  color: #FFFFFF;
+  font-family: 'MasonChronicles', serif;
+  margin-bottom: 28px;
+}
+
+.swal-text {
+  padding: 17px;
+  display: block;
+  margin: 22px;
+  color: #fff;
+}
+
+.swal-button{
+  
+  border: 1px solid white;
   background-color: #9D2929;
   color: #fff;
-  padding: 10px 20px;
-}
-
-/* Modal */
-.modal{
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-
-  background-color: rgba(38, 15, 100, 0.8);
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-.modal__dialog{
-  width: 100%;
-  max-width: 900px;
-  padding: 20px;
-  margin: auto;
-  border-radius: 10px;
-
-  background-color: #fff;
-}
-
-.modal__description{
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-
-  color: #000000;
-  z-index: 1001;
-}
-
-.modal__title{
-  margin: 0 auto;
-  margin-bottom: 20px;
-
-  font-family: 'MasonChronicles', serif;
-  font-size: 56px;
-}
-
-.modal__text{
-  font-size: 20px;
-  margin-bottom: 50px;
-}
-
-/* Helper classes */
-.no-scroll{
-  overflow: hidden;
-}
-
-.hide{
-  display: none;
 }
 
 /* RESPONSIVE */
-@media (max-width: 1000px){
-  .modal__dialog{
-    max-width: 80%;
-  }
-}
 
 @media (max-width: 760px){
   .button_play{ display: none; }
@@ -533,12 +498,4 @@ body{
   .main{ margin-top: 226px; }
   .main__title{ font-size: 56px; }
   .main__subtitle{ max-width: 315px; }
-
-  /* .modal__dialog{max-width: 80%;} */
-  .modal__title{
-    font-size: 36px;
-  }
-  .modal__text{
-    font-size: 14px;
-  }
 }
