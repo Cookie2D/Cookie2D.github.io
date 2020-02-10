@@ -15,14 +15,14 @@
   <title>Ведьмак - HEофициальный сайт сериала</title>
 </head>
 
-<body>
+<body class="no-scroll">
   <header>
     <div class="container">
       <div class="header">
         <img src="img/logo.png" alt="Лого ведьмак" class="header__logo">
 
         <nav class="nav">
-          <a href="#" class="nav__link">Описание </a>
+          <a href="#" class="nav__link" id="description-btn">Описание </a>
           <a data-fancybox href="https://www.youtube.com/watch?v=EUizTA1nrfA" class="nav__link">Трейлер</a>
           <a href="#" class="nav__link">Отзывы</a>
         </nav>
@@ -176,6 +176,29 @@
       </div>
     </div>
   </footer>
+
+  <!-- Modals -->
+  <div class="modal">
+    <div class="modal__dialog">
+      <section class="modal__description">
+        <h2 class="modal__title">Ведьмак</h2>
+        <article class="modal__text">«Сага о ведьмаке» — цикл книг польского писателя Анджея Сапковского в жанре
+          фэнтези.
+
+          Первый рассказ цикла увидел свет в 1986 году, а последняя книга — в 2013. Действие книг происходит в
+          вымышленном
+          мире, напоминающем Европу времён позднего средневековья, где рядом с людьми существуют разного рода волшебные
+          существа и чудовища. Геральт из Ривии — один из последних «ведьмаков», бродячих охотников на чудовищ. В то
+          время
+          как первые книги цикла представляют собой сборники рассказов о приключениях Геральта, нередко сатирически
+          обыгрывая фольклор и классические литературные сказки, сюжет последующих книг представляет собой более
+          масштабную историю, построенную вокруг Геральта и его воспитанницы Цири, обладающей чудесными способностями.
+         </article>
+
+          <button class="button button_red" id="modal-btn">Закрыть</button>
+      </section>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
