@@ -13,6 +13,7 @@ let mySwiper = new Swiper('.swiper-container', {
 
 });
 
+let body = document.querySelector('body');
 let menuButton = document.querySelector('.button_burger');
 let menu = document.querySelector('.header');
 let modalButton = document.querySelector('#modal-btn');
@@ -26,8 +27,10 @@ menuButton.addEventListener('click', function () {
 
 modalButton.addEventListener('click', function () {
   modal.classList.add('hide');
+  body.classList.remove('no-scroll')
 });
 
 descriptionButton.addEventListener('click', function () {
   modal.classList.remove('hide');
+  body.classList.add('no-scroll')
 });
