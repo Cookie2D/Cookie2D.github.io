@@ -474,16 +474,15 @@ body{
     flex-direction: column;
 
     transform: translateY(-200px) rotateX(90deg) ;
-    
+    transition: transform .4s ease-in-out;
+
     width: 250px;
     background-color: #9D2929;
   }
 
   .social__link:first-child{margin-left: 0;}
 
-  .show{
-    transition: transform .4s ease-in-out;
-    
+  .show{    
     transform: translateY(0); 
   }
   
