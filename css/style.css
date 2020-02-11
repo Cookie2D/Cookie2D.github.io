@@ -462,7 +462,6 @@ body{
   }
 
   .header{
-    display: none;
     position: absolute;
     right: 0;
     top: 0;
@@ -474,11 +473,17 @@ body{
 
     flex-direction: column;
 
+    transform: translateY(-200px) rotateX(90deg) ;
+    transition: transform .4s ease-in-out;
     width: 250px;
     background-color: #9D2929;
   }
 
-  .show{ display: flex; }
+  .social__link:first-child{margin-left: 0;}
+
+  .show{
+    transform: translateY(0); 
+  }
   
   .header__logo{ padding-bottom: 43px; }
 
