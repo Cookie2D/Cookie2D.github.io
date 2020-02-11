@@ -339,7 +339,7 @@ body{
 .button_burger{
   display: none;
 }
-/* Sweet Alert */
+/* Modal Settings */
 
 .swal-overlay {
   background-color: rgba(20, 18, 24, 0.8)
@@ -347,7 +347,7 @@ body{
 
 .swal-modal {
   background-color: #141218;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 10px;
 }
 
@@ -366,8 +366,14 @@ body{
   color: #fff;
 }
 
+.swal-footer{
+  display: flex;
+  justify-content: center;
+}
+
 .swal-button{
   
+  font-size: 18px;
   border: 1px solid white;
   background-color: #9D2929;
   color: #fff;
@@ -467,7 +473,7 @@ body{
     background-color: #9D2929;
   }
 
-  .header--active{ display: flex; }
+  .show{ display: flex; }
   
   .header__logo{ padding-bottom: 43px; }
 
@@ -498,4 +504,26 @@ body{
   .main{ margin-top: 226px; }
   .main__title{ font-size: 56px; }
   .main__subtitle{ max-width: 315px; }
+
+  /* Modal Media */
+  .swal-icon{
+    display: none;
+  }
+  .swal-title {
+    font-size: 36px;
+    color: #FFFFFF;
+  }
+  
+  .swal-text {
+    padding: 8px;
+    margin: 0 22px;
+  }
+  
+  .swal-footer{
+    margin: 0;
+  }
+
+  .swal-button{
+    font-size: 14px;
+  }
 }
